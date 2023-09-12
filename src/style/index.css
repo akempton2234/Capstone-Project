@@ -1,0 +1,72 @@
+/* Reset some default browser styles for consistency */
+body, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+}
+
+/* Ensure sufficient contrast for text */
+body {
+  color: #333; /* Adjust color as needed */
+  background-color: #fff; /* Adjust background color as needed */
+}
+
+/* Focus styles for links and buttons */
+a:focus,
+button:focus {
+  outline: 2px solid #007bff; /* Add a visible outline on focus */
+}
+
+/* Skip to content link */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip-link:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+}
+
+/* Header styles */
+header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+}
+
+/* Navigation menu styles */
+nav {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Main content styles */
+main {
+  padding: 20px;
+}
+
+/* Ensure sufficient color contrast for text */
+/* Example: Check the contrast for normal-sized text */
+p, ul, ol, li, a {
+  color: #333; /* Adjust text color as needed */
+  background-color: #fff; /* Adjust background color as needed */
+}
+
+/* Use left-aligned text for LTR languages, right-aligned text for RTL languages */
+/* Example: For right-aligned text in RTL languages */
+[dir="rtl"] p, [dir="rtl"] ul, [dir="rtl"] ol, [dir="rtl"] li, [dir="rtl"] a {
+  text-align: right;
+}
