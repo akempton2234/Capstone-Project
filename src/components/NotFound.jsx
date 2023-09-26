@@ -1,3 +1,4 @@
+// Functional component for displaying a 404 - Not Found page
 const NotFound = () => {
   return (
     <div>
